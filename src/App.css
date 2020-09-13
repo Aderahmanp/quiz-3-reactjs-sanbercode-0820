@@ -1,38 +1,191 @@
-.App {
+body {
+  background-image: url(../src/img/pattern.jpg);
+  font-family: 'Slabo 27px', serif;
+  margin: 0px;
+}
+
+header {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: white;
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+article {
+  border-bottom: 1px solid lightgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h5 {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer {
   display: flex;
-  flex-direction: column;
+  position: fixed;
+  /* padding-top: 30px; */
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* css index */
+
+.flexIndex {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.fromAbout {
+  width: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.titleAbout {
+  padding: 10px; 
+  border: 1px solid black;
+  margin-top:10% !important;
+  width: 75%;
+  background-color: white;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleCenter {
+  text-align: center;
+}
+
+/* css home  */
+.cardImg {
+  object-fit: cover;
+  width: 400px;
+  height: 350px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.ratingCard {
+  padding-top: 100px;
+}
+
+.flexBodyCard {
+  display:flex;
+}
+
+.homeContainer {
+  width: 75%;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 4.5% !important;
+  padding: 25px;
+  margin-bottom: 3%;
+  
+}
+
+/* css movie list */
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  margin: auto;
+  
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.titleTable{
+  width: 45px;
+}
+
+.description {
+  width: 45px;
+}
+
+.containerTable{
+  background-color: white;
+  width: 75%;
+  margin: auto;
+  margin-top: 5%;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 4%;
+}
+
+.formTable{
+  border: solid 1px black;
+  width: 49%;
+  margin: auto;
+  padding: 10px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 5px, 5px, 5px, 0px;
+  margin-top: 5px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm{
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  margin-top:10%;
+  padding: 25px;
+  border: solid 1px black;
+  border-radius:15px;
+}
+
+.user{
+  margin-bottom: 20px;
+  margin-left:10px;
+}
+
+.password {
+  margin-left:13px;
 }
